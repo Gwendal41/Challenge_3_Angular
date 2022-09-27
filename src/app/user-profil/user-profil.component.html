@@ -5,7 +5,11 @@
     <p>{{user1.quote}}</p>
         <input type="text" [(ngModel)]="user1.quote">
         <div class="input-container">
-        <p *ngIf="user1.showUserAge">age : {{user1.age}}</p>
+        <p  class="height-p">
+           <span *ngIf="user1.showUserAge">
+            age : {{user1.age}}
+           </span>
+        </p>
         <button (click)="user1.hiddenAge()" > Click bg </button>
     </div>
 </div>
